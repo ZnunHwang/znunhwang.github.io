@@ -7,12 +7,25 @@ document.querySelector("h1").addEventListener("click", ()=> {
 
 
 let myImage = document.querySelector('img');
-myImage.onclick = function(){
-    let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/firefox-icon.png') {
-        myImage.setAttribute('src', 'images/firefox2.jpg');
-    } else {
-        myImage.setAttribute('src', 'images/firefox-icon.png');
+myImage.onclick = () => { ChangeImg(1) };
+
+function ChangeImg(itag) {
+    if (itag === 1) {
+        let mySrc = myImage.getAttribute('src');
+        if (mySrc === 'images/firefox-icon.png') {
+            myImage.setAttribute('src', 'images/firefox2.jpg');
+        } else {
+            myImage.setAttribute('src', 'images/firefox-icon.png');
+        }
+    }
+    else if (itag === 2){
+        let myImage002 = document.getElementById("img002");
+        let mySrc002 = myImage002.getAttribute('src');
+        if (mySrc002 === 'images/firefox-icon.png') {
+            myImage002.setAttribute('src', 'images/firefox2.jpg');
+        } else {
+            myImage002.setAttribute('src', 'images/firefox-icon.png');
+        }
     }
 }
 

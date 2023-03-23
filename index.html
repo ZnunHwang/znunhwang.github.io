@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <img id="img001" src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <figure>
+        <img id="img002" src="images/firefox-icon.png"
+             alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+             width="512"
+             height="512" onClick="ChangeImg(2)">
+        <figcaption>这是一个浏览器</figcaption>
+    </figure>
+
 
     <p><em>At Mozilla, we’re a global community of</em></p>
 
@@ -29,6 +37,19 @@
         to learn even more about the values and principles that guide the pursuit of our mission.
     </p>
     <button>切换用户</button>
+    <p>
+        <br />
+    </p>
+    
+    <!--嵌入bing地图-->
+    <div>
+        <iframe width="800" height="800" frameborder="0" src="https://cn.bing.com/maps/embed?h=800&w=800&cp=nb9rm9ty9sbx&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+        </iframe>
+        <div style="white-space: nowrap; text-align: center; width: 800px; padding: 6px 0;">
+            <a id="largeMapLink" target="_blank" href="https://cn.bing.com/maps?cp=nb9rm9ty9sbx&amp;sty=r&amp;lvl=18&amp;FORM=MBEDLD">查看放大的地图</a> &nbsp; | &nbsp;
+            <a id="dirMapLink" target="_blank" href="https://cn.bing.com/maps/directions?cp=nb9rm9ty9sbx&amp;sty=r&amp;lvl=18&amp;rtp=~pos.nb9rm9_ty9sbx____&amp;FORM=MBEDLD">获取路线</a>
+        </div>
+    </div>
 
     <script src="scripts/main.js" defer></script>
 </body>
